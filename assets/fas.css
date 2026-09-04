@@ -1,0 +1,30 @@
+/* fas-site: fas.hatenabase.jp 向けの差分スタイル。tax-geo.css の後に読み込む。
+ * トークン・コンポーネントは tax-geo.css をそのまま使い、ここには FAS サイト固有の追加だけを置く。 */
+.hbrand{display:flex;align-items:center}
+.hsub{font-size:11px;letter-spacing:.24em;font-weight:700;color:var(--navy);margin-left:14px;padding-left:14px;border-left:1px solid var(--line);line-height:1}
+.sgrid2{grid-template-columns:1fr 1fr}
+.fgrid2{grid-template-columns:1fr 1fr}
+.svc{padding:96px 0;border-bottom:1px solid var(--line)}
+.svc .lead{margin-bottom:40px}
+.svc .snum{margin-bottom:12px}
+.svc h2{margin:0 0 20px;font-size:30px;font-weight:700;letter-spacing:.06em;line-height:1.4;color:var(--navy)}
+.svcg{display:grid;grid-template-columns:1fr 2fr;gap:56px;align-items:start}
+.svcg .geo{margin-bottom:18px}
+.svcg .tcta{margin-top:8px}
+.tbd{display:inline-block;font-size:10.5px;color:#fff;background:#B3261E;border-radius:4px;padding:1px 8px;margin-left:8px;vertical-align:2px;letter-spacing:.06em;font-weight:700;font-style:normal}
+.ftsub{font-size:12px;color:#9FB4CB;line-height:2}
+.gco.cur b{color:var(--sky)}
+@media(max-width:960px){.svcg{grid-template-columns:1fr;gap:28px}}
+@media(max-width:767px){.sgrid2,.fgrid2{grid-template-columns:1fr}.svc{padding:64px 0}.svc h2{font-size:24px}.hsub{margin-left:10px;padding-left:10px}}
+
+/* ---- プレビュー一覧（index.html）専用 ---- */
+.pvlist{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:56px}
+.pv{border:1px solid var(--line);border-radius:12px;background:#fff;padding:28px 30px;display:block}
+.pv .snum{margin-bottom:10px}
+.pv h3{margin:0 0 8px;font-size:18px;font-weight:700;letter-spacing:.04em;color:var(--navy)}
+.pv p{margin:0;font-size:13px;color:var(--mute)}
+.pvnote{border:1px solid var(--line);border-radius:12px;background:var(--sub);padding:28px 32px;font-size:13.5px;color:var(--mute)}
+.pvnote h3{margin:0 0 12px;font-size:15px;color:var(--navy);letter-spacing:.04em}
+.pvnote ul{margin:0;padding-left:20px}
+.pvnote li{margin-bottom:6px}
+@media(max-width:767px){.pvlist{grid-template-columns:1fr}}
